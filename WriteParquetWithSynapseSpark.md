@@ -23,3 +23,4 @@ data_path.write.partitionBy('yr','mnth').parquet('abfss://<containerspace>@<data
 ```
 
 
+[Go Back](https://github.com/abrahams1/Azure-Synapse-Notes/blob/master/index.md)
