@@ -18,6 +18,7 @@ data_path.columns
 4. Write back to data lake file path - parquet format with partitions as needed.
 
 ```python
+%%pyspark
 data_path.write.partitionBy('yr','mnth').parquet('abfss://tempspace@awdlsstudnn.dfs.core.windows.net/Bike-Sharing-Dataset/compressed/bikesharehour.parquet', mode = 'overwrite')
 ```
 
