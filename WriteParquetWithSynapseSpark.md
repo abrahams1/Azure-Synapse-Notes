@@ -8,7 +8,7 @@
 
 ```python
 %%pyspark
-data_path = spark.read.load('abfss://containerspace@datalakestore.dfs.core.windows.net/Bike-Sharing-Dataset/landing/hour.csv', format='csv'
+data_path = spark.read.load('abfss://<containerspace>@<datalakestorename>.dfs.core.windows.net/Bike-Sharing-Dataset/landing/hour.csv', format='csv'
 , header=True)
 
 #display(data_path)
