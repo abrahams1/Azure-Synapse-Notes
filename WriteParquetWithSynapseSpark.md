@@ -19,7 +19,7 @@ data_path.columns
 
 ```python
 %%pyspark
-data_path.write.partitionBy('yr','mnth').parquet('abfss://<containerspace>@<datalakestorename>.dfs.core.windows.net/Bike-Sharing-Dataset/compressed/bikesharehour.parquet', mode = 'overwrite')
+data_path.write.partitionBy('yr','mnth').parquet('abfss://<containerspace>@<datalakestorename>.dfs.core.windows.net/Bike-Sharing-Dataset/compressed/bikesharehour', mode = 'overwrite')
 ```
 
 
